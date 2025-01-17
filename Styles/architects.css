@@ -199,6 +199,21 @@ main{
     filter: grayscale(100%);
 }
 
+/* Footer Section */
+.footer-section{
+    max-width: 1440px;
+    margin: 0 auto;
+    height: 100px;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 8px;
+    background-color: rgba(255, 244, 231, 1.00);
+    margin-bottom: 216px;
+
+}
+
 
 
 
@@ -213,6 +228,10 @@ main{
     .team-img{
         margin-bottom: 20px; /* gap will reduce */
     }
+    .sponspors-media{
+        gap: 50px;
+        justify-items: center;
+    }
 }
 
 /* medium size device */
@@ -226,4 +245,9 @@ main{
     .team-features{
         margin-left: 20px;
     } 
+    .sponspors-media{
+        grid-template-columns: repeat(2,1fr); 
+        gap: 50px;
+        justify-items: center;
+    }
 }
