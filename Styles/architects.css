@@ -70,10 +70,73 @@ ul > li > a{
 
 }
 
+main{
+    max-width: 1440px;
+    margin: 0 auto;
+}
+/* Features Section Part */
+.team-work{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.team-img{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    gap: 24px;
+    margin-top: 85px;
+    margin-bottom: 130px;
+    margin-right: 73px;
+}
+.team-features{
+    max-width: 537px;
+}
+.title1{
+    color: #727272;
+    font-weight: 550;
+}
+.title2{
+    color: #131313;
+    font-weight: 700;
+
+}
+.title3{
+    color: #FF900E;
+}
+.features-title{
+    font-size: 3rem;
+    margin-bottom: 24px;
+}
+.features-description{
+    font-weight: 400;
+    font-size: 1rem;
+    color: #727272;
+    margin-bottom: 32px;
+}
+
+
 /* responsive media query */
 @media screen and (max-width:576px) {
-    .navbar,.nav-links{
+    .navbar, .nav-links, .team-work{
         flex-direction: column;
     }
-    
+    .team-img{
+        grid-template-columns: repeat(1,1fr); /* img will show one after one */
+    }
+    .team-img{
+        margin-bottom: 20px; /* gap will reduce */
+    }
+}
+
+/* medium size device */
+@media screen and (min-width: 576px) and (max-width: 992px) {
+    .team-work{
+        flex-direction: column;
+    }
+    .team-img{
+        margin-bottom: 20px; /* gap will reduce */
+    }
+    .team-features{
+        margin-left: 20px;
+    } 
 }
