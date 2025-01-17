@@ -114,6 +114,68 @@ main{
     margin-bottom: 32px;
 }
 
+/* Features You Will Love & Enjoy */
+#features-explore-border{
+    border-left: 5px solid #FF900E;
+    padding-left: 21px;
+}
+.features-explore-title{
+    font-weight: 700;
+    font-size: 2.8rem;
+    color: #131313;
+    margin-bottom: 24px;
+}
+.features-explore-description{
+    font-weight: 400;
+    font-size: 1rem;
+    color: #727272;
+    max-width: 586px;
+    margin-bottom: 30px;
+}
+   /* Features Card */
+.features-card{
+    padding: 30px 42px;
+    box-shadow: 0 4px 30px 0 rgba(0, 0, 0, 0.06);
+    margin-bottom: 8px;
+    border-radius: 8px;
+}
+.features-card-title{
+    font-weight: 600;
+    font-size: 1.25rem;
+    color: #131313;
+    /* margin-bottom: 10px; */
+    margin-top: 0px;
+}
+.features-card-description{
+    font-weight: 400;
+    font-size: 1rem;
+    color: #727272;
+}
+.features-explore{
+    display: flex;
+    gap: 146px;
+}
+/* features button part */
+.experience-badge{
+    padding: 46px 42px;
+    margin-left: -100px;
+    margin-top: -100px;
+}
+.count-years{
+    color: rgba(255, 255, 255, 1.00);
+    font-weight: 700;
+    font-size: 4rem;
+}
+.count-experience{
+    font-size: 1.5rem;
+    font-weight: 600;
+}
+/* responsive korar jonno img width 100% */
+#img-features img{
+    width: 100%;
+}
+
+
 /* Some Facts Section */
 .facts-title{
     font-weight: 700;
@@ -219,7 +281,7 @@ main{
 
 /* responsive media query */
 @media screen and (max-width:576px) {
-    .navbar, .nav-links, .team-work{
+    .navbar, .nav-links, .team-work, .features-explore{
         flex-direction: column;
     }
     .team-img, .facts-container, .sponspors-media{
@@ -232,11 +294,16 @@ main{
         gap: 50px;
         justify-items: center;
     }
+    .experience-badge{
+        margin-top: 10px;
+        margin-left: 10px;
+    }
 }
+    
 
 /* medium size device */
 @media screen and (min-width: 576px) and (max-width: 992px) {
-    .team-work{
+    .team-work, .features-explore{
         flex-direction: column;
     }
     .team-img{
@@ -249,5 +316,9 @@ main{
         grid-template-columns: repeat(2,1fr); 
         gap: 50px;
         justify-items: center;
+    }
+    .experience-badge{
+        margin-top: 10px;
+        margin-left: 10px;
     }
 }
