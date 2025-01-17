@@ -145,11 +145,14 @@ main{
     color: #131313;
     /* margin-bottom: 10px; */
     margin-top: 0px;
+    margin-bottom: 0px;
 }
 .features-card-description{
     font-weight: 400;
     font-size: 1rem;
     color: #727272;
+    margin-top: 0px;
+    margin-bottom: 0px;
 }
 .features-explore{
     display: flex;
