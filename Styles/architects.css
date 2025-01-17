@@ -114,7 +114,7 @@ main{
     margin-bottom: 32px;
 }
 
-/* Some Facts Section Part */
+/* Some Facts Section */
 .facts-title{
     font-weight: 700;
     font-size: 2.8rem;
@@ -127,53 +127,87 @@ main{
     color: #727272;
     max-width: 542px;
 }
+
 /* Facts Container */
-.fact-icon{
-    margin-top: 40px;
-    margin-bottom: 5px;
-    align-items: center;
+.facts-container {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 24px;
+    margin: 50px auto;
+    padding: 0 20px;
 }
-.fact-value{
+
+.facts {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: auto;
+    border: 2px solid #FF900E;
+    text-align: center;
+    border-radius: 8px;
+    padding: 30px 20px;
+    
+}
+
+.fact-icon {
+    margin-top: 45px;
+    margin-bottom: 10px;
+}
+
+.fact-value {
     font-weight: 600;
     font-size: 2.8rem;
     color: #424242;
-    margin-bottom: 10px;
-    margin-top: 5px;
-}
-.fact-name{
+    margin-bottom: 5px;
     margin-top: 10px;
-    margin-bottom: 40px;
+}
+
+.fact-name {
+    margin-top: 5px;
+    margin-bottom: 60px;
     font-weight: 600;
     font-size: 1.25rem;
     color: #727272;
 }
-.facts-container{
-    height: 241px;
-    display: grid;
-    grid-template-columns: repeat(4, 1fr);
-    gap: 124px;
-    margin-top: 100px;  
-    margin-bottom: 180px;
-    margin-left: 50px;
-    
-}
-.facts{
-    height: 241px;
-    border: 2px solid #FF900E;
+
+/* Sponspors Section Styles */
+.sponspors-part{
+    max-width: 562px;
+    margin: 0 auto;
     text-align: center;
-    border-radius: 8px;
-    padding: 45px 36px;
-    
 }
+.sponspors-title{
+    font-weight: 700;
+    font-size: 2.8rem;
+    color: #131313;
+    margin-bottom: 24px;
+}
+.sponspors-description{
+    color: #727272;
+    font-weight: 400;
+    font-size: 1rem;
+    margin-bottom: 50px;
+}
+.sponspors-media{
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    gap: 155px;
+    margin-bottom: 130px;
+}
+.sponspors-media{
+    filter: grayscale(100%);
+}
+
 
 
 
 /* responsive media query */
 @media screen and (max-width:576px) {
-    .navbar, .nav-links, .team-work,{
+    .navbar, .nav-links, .team-work{
         flex-direction: column;
     }
-    .team-img, .facts-container{
+    .team-img, .facts-container, .sponspors-media{
         grid-template-columns: repeat(1,1fr); /* img will show one after one */
     }
     .team-img{
