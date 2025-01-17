@@ -1,3 +1,4 @@
+/* Font Styles */
 @import url('https://fonts.googleapis.com/css2?family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap');
 
 .work-sans-font {
@@ -6,4 +7,73 @@
     font-weight: 400;
     font-style: normal;
   }
-  
+ 
+/* Navbar Stykes */
+.navbar{
+    display: flex;
+    justify-content: space-between;
+    align-items: center; /* after use rem , home, about etc. buttons positon center */
+}
+.nav-links{
+    display: flex;
+    list-style: none; /* remove dot from home,about etc. buttons */
+    gap: 30px; 
+}
+ul > li > a{
+    text-decoration: none; /* remove underline from home,about etc. buttons */
+    color: #424242;
+    font-size: 18px;
+}
+.background-color{
+    background-color: rgba(255, 144, 14, 0.10); /* header part background color */
+}
+.nav-title{
+    font-weight: 700px;
+    font-size: 3rem; /* rem use reason to make website responsive */
+}
+.navbar, .banner{
+    max-width: 1440px;
+    margin: 0 auto; /* make text center */
+}
+
+/* Banner Styles */
+.banner-content{
+    max-width: 862px;
+    margin: 0 auto;
+    text-align: center;
+}
+.banner-title{
+    font-weight: 700;
+    font-size: 4rem;
+    color: #131313;
+    margin-bottom: 32px;
+}
+.banner-description{
+    font-weight: 400;
+    font-size: 1rem;
+    color: #727272;
+    margin-bottom: 32px;
+}
+.main-button{
+    font-weight: 600;
+    font-weight: 1.25rem;
+    color: rgba(255, 255, 255, 1.00);
+    background-color: rgba(255, 144, 14, 1.00);
+    padding: 21px 25px;
+    border-radius: 8px;
+    border: none;
+    margin-bottom: 50px;
+}
+.banner-img{    
+    width: 100%; /* to make img responsive */
+    margin-bottom: 45px;
+
+}
+
+/* responsive media query */
+@media screen and (max-width:576px) {
+    .navbar,.nav-links{
+        flex-direction: column;
+    }
+    
+}
